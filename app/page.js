@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Counter from "./counter.jsx";
+import Counter from "./counter.js";
 import Link from "next/link";
 
 

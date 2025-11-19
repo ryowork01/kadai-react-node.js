@@ -5,12 +5,16 @@ import { useState } from "react";
 export default function Counter() {
 	const [count, setCount] = useState(0);
 
+	const incrementCount = () => {
+		setCount(count + 1);
+	}
+
 	return (
 		<div>
 			<h3>カウンター</h3>
-			<p>{count}</p>
-			<button onClick={() => setCount(count + 1)}>+1</button>
-			<button onClick={() => setCount(count - 1)}>-1</button>
+			<p>現在のカウント: {count}</p>
+			<button onClick={incrementCount}>カウントを増やす</button>
+			
 		</div>
 	);
 }
