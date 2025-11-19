@@ -2,22 +2,9 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Counter from "./counter.js";
 import Link from "next/link";
-
-
 export default function Home() {
-  const postIds = [1, 2, 3];
   return (
     <div className={styles.page}>
-      <div>
-        <h1>記事一覧</h1>
-        <ul>
-          {postIds.map((id) => (
-            <li key={id}>
-              <Link href={`/post/${id}`}>記事 {id} を読む</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
       <Link href="/about">Aboutページへ移動</Link>
       <Counter />
       <main className={styles.main}>
